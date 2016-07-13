@@ -1,0 +1,87 @@
+D:\test>git init
+Initialized empty Git repository in D:/test/.git/
+
+D:\test>dir
+ Volume in drive D is Data
+ Volume Serial Number is 22F4-0287
+
+ Directory of D:\test
+
+07/13/2016  11:50 AM    <DIR>          .
+07/13/2016  11:50 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  235,418,390,528 bytes free
+
+D:\test>git pull git@github.com:gajananSatone/Spring.git
+Warning: Permanently added the RSA host key for IP address '192.30.253.112' to t
+he list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+D:\test>dir
+ Volume in drive D is Data
+ Volume Serial Number is 22F4-0287
+
+ Directory of D:\test
+
+07/13/2016  11:50 AM    <DIR>          .
+07/13/2016  11:50 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  235,418,390,528 bytes free
+
+D:\test>git pull https://github.com/gajananSatone/Spring
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/gajananSatone/Spring
+ * branch            HEAD       -> FETCH_HEAD
+
+D:\test>git add MyFirstSpringApplication
+
+D:\test>git commit -m "My First Spring Application"
+[master 8545d7d] My First Spring Application
+ Committer: Satone <gajanan.satone@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 10 files changed, 149 insertions(+)
+ create mode 100644 MyFirstSpringApplication/.classpath
+ create mode 100644 MyFirstSpringApplication/.project
+ create mode 100644 MyFirstSpringApplication/.settings/org.eclipse.jdt.core.pref
+s
+ create mode 100644 MyFirstSpringApplication/.springBeans
+ create mode 100644 MyFirstSpringApplication/bin/applicationContext.xml
+ create mode 100644 MyFirstSpringApplication/bin/com/gajanan/model/Employee.clas
+s
+ create mode 100644 MyFirstSpringApplication/bin/com/gajanan/model/MainApp.class
+
+ create mode 100644 MyFirstSpringApplication/src/applicationContext.xml
+ create mode 100644 MyFirstSpringApplication/src/com/gajanan/model/Employee.java
+
+ create mode 100644 MyFirstSpringApplication/src/com/gajanan/model/MainApp.java
+
+D:\test>git push https://github.com/gajananSatone/Spring master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': gajanan.satone@gmail.com
+Password for 'https://gajanan.satone@gmail.com@github.com/':
+Counting objects: 21, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (21/21), 3.96 KiB | 0 bytes/s, done.
+Total 21 (delta 0), reused 0 (delta 0)
+To https://github.com/gajananSatone/Spring
+   7a243c2..8545d7d  master -> master
+
+D:\test>
