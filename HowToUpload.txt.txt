@@ -1,0 +1,5 @@
+D:\test>git init
+D:\test>git pull https://github.com/gajananSatone/Spring
+D:\test>git add MyFirstSpringApplication
+D:\test>git commit -m "My First Spring Application"
+D:\test>git push https://github.com/gajananSatone/Spring master
